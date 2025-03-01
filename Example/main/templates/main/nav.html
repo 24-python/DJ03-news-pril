@@ -1,0 +1,16 @@
+{% load static %}
+<div class="col-md-3">
+    <div class="card shadow-sm border-0">
+        <div class="card-body text-center">
+            <img src="{% static 'main/img/logo.png' %}" class="img-fluid mb-3" width="150" alt="Логотип">
+            <h5 class="fw-bold">Ох уж этот Django...</h5>
+            <ul class="list-group list-group-flush mt-3">
+                <li class="list-group-item"><a href="{% url 'home' %}" class="text-decoration-none">Главная</a></li>
+                <li class="list-group-item"><a href="{% url 'page2' %}" class="text-decoration-none">Новости ДжанГо</a></li>
+                <li class="list-group-item"><a href="{% url 'about' %}" class="text-decoration-none">Обо мне</a></li>
+                <li class="list-group-item"><a href="{% url 'contacts' %}" class="text-decoration-none">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

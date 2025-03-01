@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'newmyapp',
-]
+    'news'
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

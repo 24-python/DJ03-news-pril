@@ -7,5 +7,15 @@
 
 <h1 class="text-center mt-4">Это новостная страница моего сайта на ДжанГО</h1>
 
+{% for new in news %}
+    <div>
+        <h3>{{ new.title }}</h3>
+        <p>{{ new.pub_date }}</p>
+        <p>{{ new.text }}</p>
+        <p>{{ new.autor }}</p>
+
+
+    </div>
+{% endfor %}
 
 {% endblock %}

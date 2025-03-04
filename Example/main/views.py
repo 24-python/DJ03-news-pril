@@ -1,10 +1,10 @@
 from django.shortcuts import render
 # Create your views here.
 def index(request):
-    return render(request, 'main/index.html', context={'title': 'Первая страница на Django'})
+    return render(request, 'main/index.html')
 
 def new(request):
-    return render(request, 'main/new.html', context={'title': 'Вторая страница на Django', 'name': 'ДжанГО'})
+    return render(request, 'main/new.html')
 
 def nav(request):
     return render(request, 'main/nav.html')

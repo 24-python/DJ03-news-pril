@@ -7,13 +7,22 @@
 
 <h1 class="text-center mt-4">Это новостная страница моего сайта на ДжанГО</h1>
 
-{% for new in news %}
-    <div>
-        <h3>{{ new.title }}</h3>
-        <p>Дата создания: {{ new.pub_date }}</p>
-        <p>{{ new.text }}</p>
-        <p>Автор: {{ new.autor }}</p>
-    </div>
-{% endfor %}
+    {% if news %}
+        {% for new in news %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ new.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Дата создания: {{ new.pub_date }}</h6>
+                    <p class="card-text">{{ new.short_description }}</p>
+                    <p class="card-text">Автор: {{ new.autor }}</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+
+        {% endfor %}
+    {% else %}
+        <h4>Новостей еще нет</h4>
+    {% endif %}
 
 {% endblock %}
+

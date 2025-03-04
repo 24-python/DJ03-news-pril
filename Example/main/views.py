@@ -3,8 +3,8 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'main/index.html')
 
-def new(request):
-    return render(request, 'main/new.html')
+def too(request):
+    return render(request, 'main/too.html')
 
 def nav(request):
     return render(request, 'main/nav.html')
